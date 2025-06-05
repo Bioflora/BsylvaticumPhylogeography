@@ -12,6 +12,7 @@ In this section, you can find the scripts used for ENM, and compare niches
 For ENM, we need:
 - `Coordinates.tsv` that contains the coordinates to run the niche modelling.
 - `01.Bsylvaticum_ENM.R` that contains the main script to run ENM and the projections to LGM (change inputs for Eastern and Western sub-enms.
+- `01.functionsENM.R` that contains the functions to run bootstrap and other utilities.
 
 ## Overlaps, niche breadth, similarity, and equivalence
 For niche comparison, we need: 
@@ -20,5 +21,4 @@ For niche comparison, we need:
 - `Maxent_West.tsv` and `Maxent_East.tsv` that contain the presence/absence datasets for Western vs Eastern comparisons.
 - `Model` and `Model_LGM` that contain the models obtained from the ENM before (Present and LGM).
 - `02.Overlaps.R` that contains the script to compare all the niches.
-
-
+- `01.functionsENM.R` that contains the functions to run bootstrap and other utilities.
