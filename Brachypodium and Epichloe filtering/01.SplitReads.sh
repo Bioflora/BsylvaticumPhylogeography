@@ -78,11 +78,11 @@ done
 
 # Step 8: Generate gene stats using Python scripts
 echo "Calculating gene stats and missing data for Epichloe..."
-python3 02.Counts.py
-python3 03.Summary.py
-python3 04.NameGenes.py
-python3 05.Extract_Genes.py
-python3 06.FilterGenes.py
+python3 Counts.py
+python3 Summary.py
+python3 NameGenes.py
+python3 Extract_Genes.py
+python3 FilterGenes.py
 
 # Step 9: Convert Brachypodium BAMs to FASTQ
 echo "Converting Brachypodium BAMs to FASTQ..."
@@ -110,10 +110,10 @@ done
 
 # Step 12: Generate gene stats using Python scripts
 echo "Calculating gene stats and missing data for Brachypodium..."
-python3 07.Counts2.py
-python3 08.Summary2.py
-python3 09.NameGenes2.py
-python3 10.Extract_Genes2.py
+python3 Counts2.py
+python3 Summary2.py
+python3 NameGenes2.py
+python3 Extract_Genes2.py
 python3 FilterGenes2.py
 
 # Final message
