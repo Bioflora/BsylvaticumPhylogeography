@@ -1,6 +1,6 @@
 # Population Genomics
 
-In this section you can find the scripts used for Linkage Disequilibrium Filtering, ADMIXTURE analysis and Isolation by Distance/Environment
+In this section, you can find the scripts used for Linkage Disequilibrium Filtering, ADMIXTURE analysis and Isolation by Distance/Environment
 
 > This repository contains data and instructions to run scripts used in different analyses of *Brachypodium sylvaticum* data included in the paper:
 >
@@ -11,10 +11,10 @@ In this section you can find the scripts used for Linkage Disequilibrium Filteri
 ## Linkage Disequilibrium Filtering
 For LD Filtering, we need: 
 - `01.LD_Filtering.sh` that contains the main script to filter linked variants.
-- `Bsylvaticum.vcf` that contains the vcf file obtained from SNP calling.
+- `Bsylvaticum.vcf` that contains the VCF file obtained from SNP calling.
 
 ## ADMIXTURE
-For the ADMIXTURE, we need: 
+For ADMIXTURE, we need: 
 - `02.RunAdmixture.sh` that contains the main script to run the analysis.
 - `Bsylvaticum_Filtered.vcf` that contains the vcf file obtained from SNP calling and after filtering for LD.
 
