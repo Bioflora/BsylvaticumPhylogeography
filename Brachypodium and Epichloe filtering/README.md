@@ -10,11 +10,11 @@ In this section, you can find the scripts used for read assembly and split in Br
 
 ## Read mapping and sequence extraction
 - `01.SplitReads.sh` that contains the main script that maps against a concatenated reference using Bsylvaticum (nuclear), Bsylvaticum (plastome), Esylvatica (endophyte) reference genomes. and splits into different subfolders.
-- `02.Counts.py` and `06.Counts.py` that contain scripts to summarize the amount of genes based on different thresholds and generate a table (for Brachypodium first and second for Epichloe).
-- `03.Summary.py` and `07.Summary.py` that contain scripts to summarize the table generated in ` 02/06.Counts.py`.
-- `04.Extract_Genes.py` and `08.Extract_Genes.py` that contain scripts to split the individual fasta sequences into gene fastas.
-- `05.FilterGenes.py` and `09.FilterGenes.py` that contain scripts to filter the fastas based on missing data and depth.
-
+- `Counts.py` and `Counts2.py` that contain scripts to summarize the number of genes based on different thresholds and generate a table (for Brachypodium first and second for Epichloe).
+- `NameGenes.py` and `NameGenes2.py` that contain scripts to extract the name of the genes (for Brachypodium first and second for Epichloe).
+- `Summary.py` and `Summary2.py` that contain scripts to summarize the table generated in `Counts.py` and `Counts2.py` (for Brachypodium first and second for Epichloe).
+- `Extract_Genes.py` and `Extract_Genes2.py` that contain scripts to split the individual fasta sequences into gene fastas (for Brachypodium first and second for Epichloe).
+- `FilterGenes.py` and `FilterGenes2.py` that contain scripts to filter the fastas based on missing data and depth (for Brachypodium first and second for Epichloe).
 
 ## SNP calling
-- `10.SNP_Calling.sh` main script that uses the bam files to generate individual vcfs and then combine into a single VCF file.
+- `02.SNP_Calling.sh` main script that uses the bam files to generate individual vcfs and then combine into a single VCF file.
