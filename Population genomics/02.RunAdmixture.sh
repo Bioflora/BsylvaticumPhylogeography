@@ -12,7 +12,7 @@ do
 
     for K in {1..10}  # Range of K (number of ancestral populations)
     do
-        admixture -j50 -s $RANDOM --cv=10 ../Bsylvaticum_Filtered.bed $K > "log${K}.out"
+        admixture -j50 -s $RANDOM --cv=10 ./Bsylvaticum_Filtered.bed $K > "log${K}.out"
     done
 
     # Extract CV error values and format output
