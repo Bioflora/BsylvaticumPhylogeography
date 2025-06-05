@@ -10,16 +10,16 @@ In this section you can find the scripts used for Linkage Disequilibrium Filteri
 
 ## Linkage Disequilibrium Filtering
 For LD Filtering, we need: 
-- `LD_Filtering.sh` that contains the main script to filter linked variants.
+- `01.LD_Filtering.sh` that contains the main script to filter linked variants.
 - `Bsylvaticum.vcf` that contains the vcf file obtained from SNP calling.
 
 ## ADMIXTURE
 For the ADMIXTURE, we need: 
-- `RunAdmixture.sh` that contains the main script to run the analysis.
+- `02.RunAdmixture.sh` that contains the main script to run the analysis.
 - `Bsylvaticum_Filtered.vcf` that contains the vcf file obtained from SNP calling and after filtering for LD.
 
 ## IBD / IBE
 For the IBD/IBE analysis, we need: 
-- `dbRDA.R` that contains the main script to run the analysis.
+- `03.dbRDA.R` that contains the main script to run the analysis.
 - `Climatic.tsv` that contains the climatic variables for each sample extracted from the ENM analysis.
 - `Bsylvaticum_Filtered.vcf` that contains the vcf file obtained from SNP calling and after filtering for LD.
