@@ -1,0 +1,24 @@
+import os
+from Bio import SeqIO
+
+# Directory with input FASTA files
+input_dir = "./Brachypodium/Genes"
+# Output directory for filtered genes
+output_dir = "./Brachypodium/Genes_Filtered"
+
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+# Filter genes with less than 10% missing data ("N")
+for file in os.listdir(input_dir):
+    if file.endswith(".fasta"):
+        input_path = os.path.join(input_dir, file)
+        with open(input_path, "r") as f:
+            for record in SeqIO.parse(f, "fasta"):
+                sequence = str(record.seq)
+                fraction_n = sequence.upper().count("N") / len(sequence)
+                if fraction_n < 0.1:
+                    output_path = os.path.join(output_dir, file)
+                    SeqIO.write(record, output_path, "fasta")
+
+print("Filtered genes saved to:", output_dir)
