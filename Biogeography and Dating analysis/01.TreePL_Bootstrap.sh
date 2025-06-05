@@ -26,7 +26,7 @@ for treefile in bootstraps_rooted/tree_*.tre; do
     dated_out="bootstraps_results/${tree_base}_dated.tree"
 
     # Copy the base TreePL config file
-    cp conf.txt "$conf_copy"
+    cp 01.Brachypodium_Config.txt "$conf_copy"
 
     # Update treefile path in config
     sed -i "s|^treefile = .*|treefile = /TreePL/${treefile}|" "$conf_copy"
