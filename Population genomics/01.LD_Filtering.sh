@@ -18,7 +18,7 @@ vcftools --vcf Bsylvaticum_step1.vcf --max-alleles 2 --recode --out Bsylvaticum_
 plink2 --vcf Bsylvaticum_step2.recode.vcf --make-bed --out Bsylvaticum_plink --allow-extra-chr --set-missing-var-ids @:#
 
 # Step 4: Remove SNPs with missing data and non-SNP variants
-plink2 --bfile Bsylvaticum_plink --geno 0.0 --snps-only --make-bed --out Bsylvaticum_clean --allow-extra-chr
+plink2 --bfile Bsylvaticum_plink --geno 0.1 --maf 0.05 --snps-only --make-bed --out Bsylvaticum_clean --allow-extra-chr
 
 # Step 5: Perform LD pruning (500 bp window, step 5, r² < 0.2)
 plink2 --bfile Bsylvaticum_clean --indep-pairwise 500 5 0.2 --out Bsylvaticum_pruned --allow-extra-chr
