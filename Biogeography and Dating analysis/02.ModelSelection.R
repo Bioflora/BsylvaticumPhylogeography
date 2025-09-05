@@ -18,7 +18,7 @@ library(stringr)
 library(phytools)
 
 # Set working directory
-setwd("./BioGeoBEARS/Eastern_ModelTest")
+setwd("./BioGeoBEARS/All_ModelTest")
 
 # Function to run and save a BioGeoBEARS model
 run_model <- function(model_name, trfn, geogfn, max_range_size=9, include_null_range=TRUE, j_param=FALSE) {
@@ -73,8 +73,8 @@ run_model <- function(model_name, trfn, geogfn, max_range_size=9, include_null_r
 }
 
 # Define input files
-trfn <- "Eastern_Dated.tree"
-geogfn <- "Biogeobears_Geo_Eastern.txt"
+trfn <- "Bsylvaticum_Dated.tree"
+geogfn <- "Biogeobears.txt"
 
 # Run model set
 resDEC         <- run_model("DEC", trfn, geogfn)
