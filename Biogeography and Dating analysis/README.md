@@ -22,7 +22,6 @@ And the files needed are the following:
 
 ## BioGeoBEARS
 For ancestral area reconstruction using BioGeoBEARS, we need: 
-- `02.SplitTrees.R` that contains the script to split the dated tree in Eastern and Western Clades.
-- `Biogeobears_Geo_Eastern.txt` and `Biogeobears_Geo_Western.txt` that contains the geographic areas per individual.
-- `03.ModelSelection.R` that contains the vcf file obtained from SNP calling and after filtering for LD.
-- `04.BioGeoBEARS_DIVAJ.R` that contains the main script to run BioGeoBEARS, as we select the same model, you just need to use the same script for both trees, changing the config input and names.
+- `Biogeobears.txt` that contains the geographic areas per individual.
+- `02.ModelSelection.R` that contains the script to test up all the models (DEC, DIVA, BAYAREALIKE and same models +J)
+- `03.BioGeoBEARS_DIVAJ.R` that contains the main script to run BioGeoBEARS.
