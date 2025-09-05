@@ -4,7 +4,6 @@
 # Description:
 # This script runs the DIVALIKE+J model in BioGeoBEARS,
 # generates ancestral area reconstructions, classifies events, and produces visualizations.
-# This is adapted to Eastern Clade, just change the input to Western to do the other one.
 ############################################################
 
 # Load required libraries
@@ -15,12 +14,12 @@ library(stringr)
 library(phytools)
 
 # Set working directory
-setwd("./BioGeoBEARS/Eastern_DIVAJ")
+setwd("./BioGeoBEARS/All_DIVAJ")
 
 # Define input files
-trfn <- "East_Dated.tree"
-geogfn <- "Biogeobears_Geo_Eastern.txt"
-max_range_size <- 3
+trfn <- "Bsylvaticum_Dated.tree"
+geogfn <- "Biogeobears.txt"
+max_range_size <- 9
 
 ############################################################
 # Configure and run DIVALIKE +J model
@@ -32,7 +31,7 @@ BioGeoBEARS_run_object$geogfn <- geogfn
 BioGeoBEARS_run_object$max_range_size <- max_range_size
 BioGeoBEARS_run_object$include_null_range <- TRUE
 BioGeoBEARS_run_object$use_optimx <- TRUE
-BioGeoBEARS_run_object$num_cores_to_use <- 4
+BioGeoBEARS_run_object$num_cores_to_use <- 100
 BioGeoBEARS_run_object$return_condlikes_table <- TRUE
 BioGeoBEARS_run_object$calc_TTL_loglike_from_condlikes_table <- TRUE
 BioGeoBEARS_run_object$calc_ancprobs <- TRUE
