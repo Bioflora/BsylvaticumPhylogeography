@@ -1,0 +1,56 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ' A Palearctic divide, niche conservatism and host-fungal endophyte interactions shaped the phylogeography of the grass Brachypodium sylvaticum'
+message: '  If you use these dataset or script, please cite it using the metadata from this file'
+type: dataset
+authors:
+  - given-names: 'María Ángeles '
+    family-names: Decena
+    email: mdecena@unizar.es
+    affiliation: >-
+      Escuela Politécnica Superior de Huesca, Universidad de
+      Zaragoza, Ctra. Cuarte km 1, 22071 Huesca, Spain.
+    orcid: 'https://orcid.org/0000-0003-0865-9929'
+  - given-names: Miguel
+    family-names: Campos Cáceres
+    email: mccaceres@unizar.es
+    affiliation: >-
+      Escuela Politécnica Superior de Huesca, Universidad de
+      Zaragoza, Ctra. Cuarte km 1, 22071 Huesca, Spain
+    orcid: 'https://orcid.org/0000-0002-6555-3576'
+  - given-names: Diana
+    family-names: Calderón Pardos
+    orcid: 'https://orcid.org/0009-0004-3246-5379'
+    affiliation: >-
+      Escuela Politécnica Superior de Huesca, Universidad de
+      Zaragoza, Ctra. Cuarte km 1, 22071 Huesca, Spain
+  - given-names: Valeriia
+    family-names: Shiposha
+    orcid: 'https://orcid.org/0000-0002-9012-8627'
+    affiliation: >-
+      Institute of Biology, Tomsk State University, Tomsk
+      634050, Russia
+  - given-names: Marina
+    family-names: Olonova
+    orcid: 'https://orcid.org/0000-0002-5363-8791'
+    affiliation: >-
+      Institute of Biology, Tomsk State University, Tomsk
+      634050, Russia
+  - given-names: Pilar
+    family-names: Catalán
+    orcid: 'https://orcid.org/0000-0001-7793-5259'
+    affiliation: ' Escuela Politécnica Superior de Huesca, Universidad de Zaragoza, Ctra. Cuarte km 1, 22071 Huesca, Spain'
+identifiers:
+  - type: doi
+    value: 10.1101/2025.06.24.661274
+    description: bioRxiv
+repository-code: 'https://github.com/Bioflora/BsylvaticumPhylogeography'
+url: 'https://doi.org/10.1101/2025.06.24.661274'
+keywords:
+  - Brachypodium sylvaticum
+  - phylogeographic
+  - endophyte
+commit: citation file
+version: v1
